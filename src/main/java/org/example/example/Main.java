@@ -25,6 +25,16 @@ public class Main {
 
         System.out.println(rover.toString());
 
+        System.out.println("Enter robot movement commands");
+
+        myObj = new Scanner(System.in);
+
+        String movement = myObj.nextLine();
+
+        MarsController controller = new MarsController(movement);
+
+
+
 
 
 
