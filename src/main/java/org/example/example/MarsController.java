@@ -7,7 +7,7 @@ public class MarsController {
     this.movement = movement;
   }
 
-  private Movement convertMovement(Character movement) {
+  public Movement convertMovement(Character movement) {
     return switch (movement) {
       case 'L' -> Movement.L;
       case 'R' -> Movement.R;
@@ -15,4 +15,16 @@ public class MarsController {
       default -> null;
     };
   }
+
+  public void convertStringMovement(String movement) {
+    for (int i =0; i<movement.length(); i++) {
+      System.out.println(convertMovement(movement.charAt(i)));
+
+
+
+    }
+
+
+  }
+
 }

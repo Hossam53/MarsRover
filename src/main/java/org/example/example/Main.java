@@ -19,7 +19,7 @@ public class Main {
         coords = myObj.nextLine();
         char xcoord = coords.charAt(0);
         char ycoord = coords.charAt(2);
-        char orientation = coords.charAt(3);
+        char orientation = coords.charAt(4);
 
         MarsRover rover = new MarsRover((int) xcoord - '0',(int) ycoord - '0',orientation);
 
@@ -32,6 +32,8 @@ public class Main {
         String movement = myObj.nextLine();
 
         MarsController controller = new MarsController(movement);
+
+        controller.convertStringMovement(movement);
 
 
 
