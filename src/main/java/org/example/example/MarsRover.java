@@ -58,18 +58,15 @@ public class MarsRover {
     public Integer getXcoord() {
         return xcoord;
     }
-
     public Integer getYcoord() {
         return ycoord;
     }
     public Orientation getOrientation() {
         return orientation;
     }
-
     public void setOrientation(Orientation orientation) {
         this.orientation = orientation;
     }
-
     public void setXcoord(Integer xcoord) {
         this.xcoord = xcoord;
     }
