@@ -14,13 +14,21 @@ public class MarsRover {
 
     public Integer getAngle() {
         return switch (orientation) {
-            case N -> 0;
+            case N -> 360;
             case S -> 180;
             case E -> 90;
             case W -> 270;
         };
+    }
 
-
+    public Orientation getOrientation(Integer Angle) {
+        return switch (Angle){
+            case 360 -> Orientation.N;
+            case 90 -> Orientation.E;
+            case 180 -> Orientation.S;
+            case 270 -> Orientation.W;
+            default -> throw new IllegalStateException("Unexpected value: " + Angle);
+        };
     }
 
     public Orientation convertOrientation(char orientation) {
@@ -56,6 +64,17 @@ public class MarsRover {
     }
     public Orientation getOrientation() {
         return orientation;
+    }
+
+    public void setOrientation(Orientation orientation) {
+        this.orientation = orientation;
+    }
+
+    public void setXcoord(Integer xcoord) {
+        this.xcoord = xcoord;
+    }
+    public void setYcoord(Integer ycoord) {
+        this.ycoord = ycoord;
     }
 }
 
