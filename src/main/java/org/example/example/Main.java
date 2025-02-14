@@ -33,7 +33,7 @@ public class Main {
 
         MarsController controller = new MarsController(movement);
 
-        controller.convertStringMovement(movement);
+        controller.convertStringMovement(movement,rover);
 
 
 
