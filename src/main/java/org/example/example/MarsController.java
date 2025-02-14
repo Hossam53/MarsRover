@@ -43,11 +43,11 @@ public class MarsController {
           marsRover.setYcoord(ycoord-1);
         }
         case Orientation.E -> {
-          marsRover.setXcoord(xcoord-1);
+          marsRover.setXcoord(xcoord+1);
           marsRover.setYcoord(ycoord);
         }
         case Orientation.W -> {
-          marsRover.setXcoord(xcoord+1);
+          marsRover.setXcoord(xcoord-1);
           marsRover.setYcoord(ycoord);
         }
       }
