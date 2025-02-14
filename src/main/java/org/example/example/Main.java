@@ -35,6 +35,8 @@ public class Main {
 
         controller.convertStringMovement(movement,rover);
 
+        System.out.println(rover.toString());
+
 
 
 
