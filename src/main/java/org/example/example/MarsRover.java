@@ -14,19 +14,13 @@ public class MarsRover {
 
 
     public Orientation convertOrientation(char orientation) {
-        switch (orientation) {
-            case 'N':
-                return Orientation.N;
-            case 'S':
-                return Orientation.S;
-            case 'E':
-                return Orientation.E;
-            case 'W':
-                return Orientation.W;
-
-
-        }
-        return null;
+        return switch (orientation) {
+            case 'N' -> Orientation.N;
+            case 'S' -> Orientation.S;
+            case 'E' -> Orientation.E;
+            case 'W' -> Orientation.W;
+            default -> null;
+        };
     }
 
 

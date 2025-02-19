@@ -12,7 +12,7 @@ public class Main {
 
         MarsPlateau plateau = new MarsPlateau( (int) length - '0', (int) height  - '0');
 
-        System.out.println(plateau.toString());
+        System.out.println(plateau);
 
         System.out.println("Enter robot coordinates and orientation");
         myObj = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class Main {
 
         MarsRover rover = new MarsRover((int) xcoord - '0',(int) ycoord - '0',orientation);
 
-        System.out.println(rover.toString());
+        System.out.println(rover);
 
         System.out.println("Enter robot movement commands");
 
@@ -31,21 +31,11 @@ public class Main {
 
         String movement = myObj.nextLine();
 
-        MarsController controller = new MarsController(movement);
+        MarsController controller = new MarsController(movement,plateau);
 
-        controller.convertStringMovement(movement,rover);
+        controller.convertStringMovement(rover);
 
-        System.out.println(rover.toString());
-
-
-
-
-
-
-
-
-
-
+        System.out.println(rover);
 
     }
 }
