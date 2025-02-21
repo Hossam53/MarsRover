@@ -30,7 +30,6 @@ public class MarsController {
     /**
      * Processes the movement string and executes the corresponding commands on the given {@code MarsRover}.
      *
-     * <p>The commands include:
      * <p>If an invalid command is encountered, an {@link IllegalStateException} is thrown.
      *
      * @param marsRover the Mars Rover to move based on the movement string

@@ -99,7 +99,7 @@ public class Main {
                 // Parse the inputs as integers and a character
                 int x = Integer.parseInt(parts[0]); // The x-coordinate of the rover
                 int y = Integer.parseInt(parts[1]); // The y-coordinate of the rover
-                char orientation = parts[2].charAt(0); // The orientation (e.g., 'N', 'E', 'S', 'W')
+                char orientation = parts[2].charAt(0); // The orientation
 
                 return new MarsRover(x, y, orientation);
             } catch (Exception e) {
@@ -112,11 +112,7 @@ public class Main {
     /**
      * This method repeatedly prompts the user to input a series of movement commands
      * for the Mars rover. It validates and processes the commands, updating the rover's position
-     * and orientation. Valid commands are:
-     * - 'L': Turn the rover left
-     * - 'R': Turn the rover right
-     * - 'M': Move the rover forward
-     *
+     * and orientation.
      * @param scanner   the scanner object to read user input
      * @param plateau   the MarsPlateau object representing the boundaries of the plateau
      * @param marsRover the MarsRover object to be controlled
