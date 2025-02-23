@@ -8,7 +8,6 @@ import java.util.Scanner;
  * providing inputs to define a plateau, initialize a rover, and execute movement commands.
  * The program validates user inputs and ensures the rover's movements respect the plateau boundaries.
  */
-
 public class Main {
     // Prompt message to ask users for plateau size
     private static final String ENTER_PLATEAU_SIZE_PROMPT = "Enter plateau size (e.g., '5 5'):";
